@@ -4,7 +4,7 @@ import pickle
 import streamlit as st
 
 # Load the trained model
-model_path = r'C:\Users\Admin\Desktop\Desmondonam\Omdena\Nepal_CBWP\COPD_Prediction\Prediction\Best_Random_Forest_Model.pkl'
+model_path = r'C:\Users\Admin\Desktop\Desmondonam\Omdena\Nepal_CBWP\COPD_Prediction\Best_Random_Forest_Model.pkl'
 
 with open(model_path, 'rb') as f:
     model = pickle.load(f)
