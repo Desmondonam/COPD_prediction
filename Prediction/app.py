@@ -6,10 +6,13 @@ import streamlit as st
 # Load the trained model
 # model_path = r'C:\Users\Admin\Desktop\Desmondonam\Omdena\Nepal_CBWP\COPD_Prediction\Best_Random_Forest_Model.pkl'
 
-with open('Best_Random_Forest_Model.pkl', 'rb') as f:
-    model = pickle.load(f)
+# with open('Best_Random_Forest_Model.pkl', 'rb') as f:
+#     model = pickle.load(f)
 
+# Try another way to load the file
+model = pickle.load(open('Best_Random_Forest_Model.pkl', 'rb'))
 # Streamlit App
+
 def main():
     st.title("COPD Prediction Dashboard")
 
